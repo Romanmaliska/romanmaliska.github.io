@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0F5392;
+    color: #FFFFFF;
+    font-family: Corbel, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.4545;
+}
+
+/* for debugging only */
+
+body {
+    background-image: url(images/mobile-design.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+body > * {
+    mix-blend-mode: exclusion;
+}
+
+/* end for debugging*/
+
+
+a {
+    color: #B0D9FF;
+}
+
+li {
+    
+}
+
+h1,
+h2,
+h3 {
+    margin-left: 1.3rem;
+    font-family: Constantia, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: #0B3A66;
+    font-size: 4rem;
+    line-height: 1.125;
+}
+
+h2,
+h3 {
+    line-height: 1.225;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+p {
+    margin-left: 1.3rem; 
+}
+
+
+img {
+    margin-left: 1.3rem;
+}
+
+.overheading {
+    display: block;
+    padding-left: 1rem;
+    border-left-width: 2px;
+    border-left-style: solid;
+    font-family: Corbel, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.375em;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+h1 .overheading {
+    color: #0B3A66;
+    border-left-color: #0B3A66;
+
+}
+
+h2 .overheading {
+    color: #B0D9FF;
+    border-left-color: #B0D9FF;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 0;
+}
+
+nav li {
+    margin-left: 1.3rem;
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav a {     
+    color: #0B3A66;
+    font-size: 1rem;
+    line-height: 1.1875;
+}
+
+header {
+    background-color: #87b0d1;
+}
+
+header p {
+    color: #0B3A66;
+    margin-left: 1.3rem;
+}

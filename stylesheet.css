@@ -9,34 +9,33 @@ body {
     line-height: 1.4545;
 }
 
+
 /* for debugging only */
 
-body {
+/* body {
     background-image: url(images/mobile-design.png);
     background-repeat: no-repeat;
     background-position-x: 0px;
     background-position-y: 0px;
 }
 
-body > * {
+body>* {
     mix-blend-mode: exclusion;
-}
+} */
 
-/* end for debugging*/
+/* end for debugging */
 
 
 a {
     color: #B0D9FF;
 }
 
-li {
-    
-}
-
 h1,
 h2,
 h3 {
     margin-left: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: Constantia, sans-serif;
     font-weight: 400;
 }
@@ -53,19 +52,31 @@ h3 {
 }
 
 h2 {
+    margin-bottom: 1.7rem;
     font-size: 3rem;
 }
 
 h3 {
+    margin-top: 3rem;
+    margin-bottom: 1.6rem;
     font-size: 2.25rem;
 }
 
+li {
+    margin: 0;
+    padding-left: 0.2rem;
+    list-style-type: "—";
+}
+
 p {
-    margin-left: 1.3rem; 
+    margin-top: 0rem;
+    margin-bottom: 2.1rem;
+    margin-left: 1.3rem;
 }
 
 
 img {
+    margin-bottom: 2.25rem;
     margin-left: 1.3rem;
 }
 
@@ -83,31 +94,37 @@ img {
 }
 
 h1 .overheading {
+    margin-top: 1.7rem;
+    margin-bottom: 1.2rem;
     color: #0B3A66;
     border-left-color: #0B3A66;
-
 }
 
 h2 .overheading {
+    margin-top: 4rem;
+    margin-bottom: 1.3rem;
     color: #B0D9FF;
     border-left-color: #B0D9FF;
 }
 
+
 nav ul {
-    padding: 0;
-    margin-top: 0;
+    padding: 0.55rem 0.6rem;
+    margin: 0;
 }
 
 nav li {
-    margin-left: 1.3rem;
+    margin-left: 0.09rem;
+    padding: 0;
     display: inline-block;
-    font-size: 1rem;
     text-transform: uppercase;
 }
 
-nav a {     
+nav a {
+    display: block;
+    padding: 0.5rem;
     color: #0B3A66;
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.1875;
 }
 
@@ -116,6 +133,8 @@ header {
 }
 
 header p {
-    color: #0B3A66;
+    margin-top: 1.85rem;
+    margin-bottom: 7.5rem;
     margin-left: 1.3rem;
+    color: #0B3A66;
 }

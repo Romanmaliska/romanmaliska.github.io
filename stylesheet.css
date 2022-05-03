@@ -37,7 +37,7 @@ h1 {
     line-height: 1.125;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     h1 {
         margin-bottom: 1.875rem;
         font-size: 6.875rem;
@@ -50,7 +50,7 @@ h3 {
     line-height: 1.225;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
     h2,
     h3 {
@@ -63,7 +63,7 @@ h2 {
     font-size: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     h2 {
         font-size: 4rem;
         margin-bottom: 1.75rem;
@@ -75,7 +75,7 @@ h3 {
     font-size: 2.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     h3 {
         margin-bottom: 1.75rem;
         font-size: 2.375rem;
@@ -98,7 +98,7 @@ ul {
     padding-right: 1.2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     ul {
         margin-bottom: 7.5rem;
     }
@@ -117,8 +117,8 @@ img {
 
 @media (min-width: 1024px) {
     img {
-        object-fit: cover;
         margin-bottom: 0;
+        object-fit: cover;
         width: 100%;
         height: 365px;
     }
@@ -133,7 +133,7 @@ footer {
     padding-right: 1.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
     .header-text,
     main,
@@ -151,43 +151,22 @@ footer {
     }
 }
 
-header {
-    background-color: #6c9cca;
-    margin-bottom: 5.75rem;
-}
-
-@media (min-width: 768px) {
-    header {
-        margin-bottom: 8.125rem;
-        padding-bottom: 6.125rem;
-    }
-}
-
-.header-text {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header p {
-    color: #0B3A66;
-}
-
-
 nav {
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    margin-bottom: 1.75rem;
-    padding: 0.625rem 0;
+    padding-top: 0.625rem;
+    padding-right: 0.75rem;
+    padding-bottom: 2.375rem;
+    padding-left: 0.75rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     nav {
-        column-gap: 0.625rem;
-        justify-content: flex-end;
-        margin-bottom: 4.25rem;
+        padding-bottom: 4.25rem;
         padding-top: 1rem;
+        justify-content: flex-end;
+        column-gap: 0.625rem;
     }
 }
 
@@ -200,6 +179,47 @@ nav a {
     letter-spacing: 0.04em;
 }
 
+header {
+    padding-bottom: 38vw;
+    background-color: #fbfcfd;
+    background-image:
+        url(images/header-bg.jpg),
+        linear-gradient(0deg, #0F5392 0%, #0F5392 32vw, #fbfcfd 32vw, #fbfcfd 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+@media (min-width: 1440px) {
+    header {
+        padding-bottom: 34.2rem;
+        background-image:
+        url(images/header-bg.jpg),
+        linear-gradient(0deg, #0F5392 0%, #0F5392 28.8rem, #fbfcfd 28.8rem, #fbfcfd 100%);
+    }
+}
+
+.header-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header p {
+    color: #0B3A66;
+    margin: 0;
+}
+
+
+main {
+    margin-top: -26vw;
+}
+
+@media (min-width: 1440px) {
+    main {
+        margin-top: -23.4rem;
+    }
+}
+
 .overheading {
     display: block;
     padding-left: 1rem;
@@ -208,7 +228,7 @@ nav a {
     font-family: Corbel, sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    letter-spacing: 0.2727em;
+    letter-spacing: 0.375em;
     line-height: 2;
     text-transform: uppercase;
 }
@@ -219,7 +239,7 @@ h1 .overheading {
     border-left-color: #0B3A66;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     h1 .overheading {
         margin-bottom: 0.5rem;
     }
@@ -231,17 +251,18 @@ h2 .overheading {
     border-left-color: #B0D9FF;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     h2 .overheading {
         margin-bottom: 0.8rem;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .overheading {
-        font-size: 1.375rem;
         display: flex;
         padding-left: 0;
+        font-size: 1.375rem;
+        letter-spacing: 0.2727em;
         border: none;
     }
 
@@ -263,10 +284,10 @@ h2 .overheading {
 }
 
 .projects {
-    margin-bottom: 2.5rem;
+    margin-bottom: 4.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .projects {
         margin-bottom: 6.75rem;
     }
@@ -276,7 +297,7 @@ article {
     margin-top: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     article:first-of-type {
         margin-top: 3.5rem;
     }
@@ -309,55 +330,3 @@ article {
         flex-basis: 26rem;
     }
 }
-
-/* ---------------debugging bg */
-
-/* .header-text {
-        background-color: darkviolet;
-    }
-    
-    header {
-        background-color: chocolate !important;
-    }
-    
-    main {
-        background-color: white;
-    }
-    
-    footer {
-        background-color: salmon;
-    }
-    
-    nav ul {
-        background-color: cyan;
-    }
-    
-    section {
-        background-color: salmon;
-    }
-    .navbar-header {
-        background-color: #fff;
-    } */
-
-/* ----------------------------------------------------------------end debugging */
-
-/* for debugging only */
-
-/* body {
-    background-image: url(images/mobile-design.png);
-    background-repeat: no-repeat;
-    background-position-x: 0px;
-    background-position-y: 0px;
-}
-
-body>* {
-    mix-blend-mode: exclusion;
-} */
-
-/* end for debugging */
-
-
-/* for desktop debugging only */
-
-/* 
-/* end for debugging */

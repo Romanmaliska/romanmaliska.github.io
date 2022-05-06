@@ -109,24 +109,10 @@ li {
     list-style-type: "—";
 }
 
-img {
-    margin-bottom: 2.375rem;
-    max-width: 100%;
-    height: auto;
-}
 
-@media (min-width: 1024px) {
-    img {
-        margin-bottom: 0;
-        object-fit: cover;
-        width: 100%;
-        height: 365px;
-    }
-}
-
-.header-text,
-main,
-footer {
+.header__wrapper,
+.main,
+.footer {
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.25rem;
@@ -135,23 +121,17 @@ footer {
 
 @media (min-width: 800px) {
 
-    .header-text,
-    main,
-    footer {
+    .header__wrapper,
+    .main,
+    .footer {
         --horizontal-spacing: 2rem;
         padding-left: var(--horizontal-spacing);
         padding-right: var(--horizontal-spacing);
-
-    }
-
-    .header-text,
-    main,
-    footer {
         max-width: calc(69.5rem + 2 * var(--horizontal-spacing));
     }
 }
 
-nav {
+.nav {
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +142,7 @@ nav {
 }
 
 @media (min-width: 800px) {
-    nav {
+    .nav {
         padding-bottom: 4.25rem;
         padding-top: 1rem;
         justify-content: flex-end;
@@ -170,7 +150,7 @@ nav {
     }
 }
 
-nav a {
+.nav__link {
     padding: 0.5rem;
     color: #0B3A66;
     text-transform: uppercase;
@@ -179,7 +159,7 @@ nav a {
     letter-spacing: 0.04em;
 }
 
-header {
+.header {
     padding-bottom: 38vw;
     background-color: #fbfcfd;
     background-image:
@@ -191,31 +171,25 @@ header {
 }
 
 @media (min-width: 1440px) {
-    header {
+    .header {
         padding-bottom: 34.2rem;
         background-image:
-        url(images/header-bg.jpg),
-        linear-gradient(0deg, #0F5392 0%, #0F5392 28.8rem, #fbfcfd 28.8rem, #fbfcfd 100%);
+            url(images/header-bg.jpg),
+            linear-gradient(0deg, #0F5392 0%, #0F5392 28.8rem, #fbfcfd 28.8rem, #fbfcfd 100%);
     }
 }
 
-.header-text {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header p {
+.header__text {
     color: #0B3A66;
     margin: 0;
 }
 
-
-main {
+.main {
     margin-top: -26vw;
 }
 
 @media (min-width: 1440px) {
-    main {
+    .main {
         margin-top: -23.4rem;
     }
 }
@@ -233,26 +207,25 @@ main {
     text-transform: uppercase;
 }
 
-h1 .overheading {
+.overheading--dark-blue {
     margin-bottom: 1.25rem;
-    color: #0B3A66;
     border-left-color: #0B3A66;
 }
 
 @media (min-width: 800px) {
-    h1 .overheading {
+    .overheading--dark-blue {
         margin-bottom: 0.5rem;
     }
 }
 
-h2 .overheading {
+.overheading--light-blue {
     margin-bottom: 1.25rem;
     color: #B0D9FF;
     border-left-color: #B0D9FF;
 }
 
 @media (min-width: 800px) {
-    h2 .overheading {
+    .overheading--light-blue {
         margin-bottom: 0.8rem;
     }
 }
@@ -274,57 +247,68 @@ h2 .overheading {
         height: 0.125rem;
     }
 
-    h1 .overheading::before {
+    .overheading--dark-blue::before {
         background-color: #0B3A66;
     }
 
-    h2 .overheading::before {
+    .overheading--light-blue::before {
         background-color: #B0D9FF;
     }
 }
 
-.projects {
+.projects__wrapper {
     margin-bottom: 4.25rem;
 }
 
 @media (min-width: 800px) {
-    .projects {
+    .projects__wrapper {
         margin-bottom: 6.75rem;
     }
 }
 
-article {
+.article {
     margin-top: 3rem;
 }
 
 @media (min-width: 800px) {
-    article:first-of-type {
+    .article:first-of-type {
         margin-top: 3.5rem;
     }
 
-    article {
+    .article {
         margin-top: 2.25rem;
     }
 }
 
+
+.project__image {
+    margin-bottom: 2.375rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
 @media (min-width: 1024px) {
-    .projects-container {
+    .article__project {
         display: flex;
         gap: 2rem;
         max-width: 69.5rem;
     }
-
-    :nth-of-type(even)>.projects-container {
+    
+    :nth-of-type(even)>.article__project {
         flex-direction: row-reverse;
     }
-
-    .image {
+    
+    .project__image {
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: auto;
-    }
+        margin-bottom: 0;
+        object-fit: cover;
 
-    .text {
+    }
+    
+    .project__text {
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 26rem;

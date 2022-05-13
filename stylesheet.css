@@ -247,12 +247,12 @@ li {
     }
 }
 
-.projects__wrapper {
+.projects {
     margin-bottom: 4.25rem;
 }
 
 @media (min-width: 800px) {
-    .projects__wrapper {
+    .projects {
         margin-bottom: 6.75rem;
     }
 }

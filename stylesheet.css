@@ -257,16 +257,16 @@ li {
     }
 }
 
-.article {
+.projects__project {
     margin-top: 3rem;
 }
 
 @media (min-width: 800px) {
-    .article {
+    .projects__project {
         margin-top: 2.25rem;
     }
 
-    .article:first-of-type {
+    .projects__project:first-of-type {
         margin-top: 3.5rem;
     }
 
@@ -279,13 +279,13 @@ li {
 }
 
 @media (min-width: 1024px) {
-    .article__project {
+    .project__info {
         display: flex;
         gap: 2rem;
         max-width: 69.5rem;
     }
 
-    :nth-of-type(even)>.article__project {
+    :nth-of-type(even)>.project__info {
         flex-direction: row-reverse;
     }
 

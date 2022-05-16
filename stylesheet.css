@@ -284,6 +284,17 @@ li {
     height: auto;
 }
 
+@media (min-width:1024px) {
+    .projects__image {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        margin-bottom: 0;
+        object-fit: cover;
+
+    }
+}
+
 @media (min-width: 1024px) {
     .projects__info {
         display: flex;
@@ -293,15 +304,6 @@ li {
 
     :nth-of-type(even)>.project__info {
         flex-direction: row-reverse;
-    }
-
-    .projects__image {
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: auto;
-        margin-bottom: 0;
-        object-fit: cover;
-
     }
 
     .projects__text {

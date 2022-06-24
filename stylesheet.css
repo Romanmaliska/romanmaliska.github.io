@@ -283,6 +283,7 @@ li {
     margin-bottom: 2.375rem;
     max-width: 100%;
     height: auto;
+    border-radius: 16px;
 }
 
 @media (min-width:768px) {
